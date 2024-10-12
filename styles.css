@@ -1,0 +1,339 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  padding: 20px;
+  background-color: #f2f2f2;
+  color: #333;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Options/Navbar Container Styles */
+.options-navbar {
+  display: flex;
+  justify-content: center; /* Center the buttons horizontally */
+  align-items: center;
+  width: 100%;
+  height: 60px;
+  background-color: #00958e;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 0 20px; /* Add padding to the left and right sides */
+  z-index: 1000;
+}
+
+/* Styles for Links Inside the Options/Navbar */
+.options-navbar a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 15px;
+  margin: 0 5px;
+}
+
+/* Screen Styles */
+.screen {
+  width: 800px;
+  margin: 80px auto 40px; /* Adjusted margin to make space for the options/navbar */
+  padding: 30px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+label {
+  display: inline-block;
+  margin-top: 10px;
+  margin-right: 10px;
+  width: 120px;
+  text-align: right;
+}
+
+input {
+  margin-top: 5px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.semester-container {
+  margin-left: 20px;
+  margin-top: 50px;
+}
+
+.class-input {
+  margin-left: 20px;
+  margin-top: 10px;
+  padding: 10px;
+  display: flex; /* Use flexbox to align the label and input elements horizontally */
+  align-items: center; /* Center the items vertically within the flex container */
+  margin-bottom: 10px;
+}
+
+.class-input label {
+  flex: .4; /* Allow the label to grow and take available space within the flex container */
+  margin-right: 10px; /* Add some space between the label and input */
+  width: 10px; /* Adjust the width of the label as needed */
+}
+
+.class-input input {
+  margin-top: 5px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+/* Add this CSS to style the class input container */
+
+
+
+
+
+
+
+#classInputs2 {
+  margin-top: 50px;
+}
+
+#classInputs3 {
+  margin-top: 50px;
+  margin-left: 40px;
+}
+
+#classInputs4
+{
+  margin-left:15px;
+}
+
+.result-label,
+.result-label2,
+.result-label3,
+.result-label4 {
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 70px;
+}
+/* Modal styles */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 9999;
+}
+
+.modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #f2f2f2;
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+.class-row,
+.class-row2,
+.class-row3,
+.class-row4 {
+  margin-bottom: 10px;
+}
+
+.btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #00958e;
+  color: #fff;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.btn:hover {
+  background-color: #05c9a5;
+}
+
+#other {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+a {
+  color: #05c9a5;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #00958e;
+  text-decoration: underline;
+}
+
+.footer {
+  height: 30px;
+  background-color: #000;
+  width: 100%;
+  margin-top: 40px;
+}
+
+/* Additional Styles for Better Aesthetics */
+.content {
+  max-width: 800px;
+  width: 100%;
+}
+
+.screen h1 {
+  color: #00958e;
+}
+
+#other .btn {
+  background-color: #05c9a5;
+  color: #fff;
+  border-radius: 30px;
+  padding: 12px 30px;
+  width: 220px;
+  text-align: center;
+}
+
+#other .btn:hover {
+  background-color: #00958e;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  display: none;
+}
+
+
+
+/* New styles for the calculator buttons */
+.calculator-btn {
+  background-color: #00958e;
+  color: #fff;
+  padding: 8px 20px; /* Adjust padding to make the buttons smaller */
+  font-size: 16px; /* Adjust font size for the calculator buttons */
+  margin-top: 90px;
+  
+  border: none;
+  cursor: pointer;
+}
+.calculator-btn:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+.calculator2-btn:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Apply the btn:hover styles to the calculator buttons on hover */
+.calculator-btn:hover {
+  background-color: #05c9a5;
+}
+
+.calculator2-btn {
+  background-color: #00958e;
+  color: #fff;
+  padding: 8px 18px; /* Adjust padding to make the buttons smaller */
+  font-size: 14px; /* Adjust font size for the calculator buttons */
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right:5px;
+  margin-left:5px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Apply the btn:hover styles to the calculator buttons on hover */
+.calculator2-btn:hover {
+  background-color: #05c9a5;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown button styles */
+.dropdown-btn {
+  background-color: #00958e;
+  color: #fff;
+  padding: 8px 20px; /* Adjust padding to make the button smaller */
+  font-size: 16px; /* Adjust font size for the button */
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  z-index: 900;
+}
+
+/* Dropdown content (options) styles */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 5px;
+}
+
+/* Styles for individual dropdown options */
+.dropdown-option {
+  padding: 9px 12px;
+  text-decoration: none;
+  display: block;
+  color: #333;
+  transition: background-color 0.3s ease; /* Add a smooth transition */
+}
+
+/* Styles for the selected option when hovering */
+.dropdown-option:hover {
+  background-color: #ddd; /* Change the background color on hover */
+}
+
+/* Show the dropdown content when the button is clicked */
+.dropdown.active .dropdown-content {
+  display: block;
+}
+
+.logo-image {
+  /* New styles for the image */
+  width: 50px; /* Adjust the width of the image as needed */
+  height: 50px; /* Adjust the height of the image as needed */
+  margin-right: 20px; /* Add right margin to create space between the last button and the image */
+}
+.header-image {
+  /* New styles for the image */
+  float: right; /* Float the image to the right */
+  margin-left: 20px; /* Add some space between the header and the image */
+  width: auto; /* Let the browser automatically adjust the width */
+  height: 100px; /* Adjust the height of the image as needed */
+  object-fit: contain; /* Maintain the aspect ratio and fit the image within the specified height */
+  margin-top : -50px;
+}

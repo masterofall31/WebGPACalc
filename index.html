@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>GPA Calculator</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+	
+</head>
+
+<body>
+  <div class="options-navbar">
+    <button class="btn" id="home">Home</button>
+    <button class="btn" id="weighted">Weighted Cumulative GPA</button>
+    <button class="btn" id="regular">Weighted Non-Cumulative GPA</button>
+    <button class="btn" id="unweighted">Unweighted Non-Cumulative GPA</button>
+    <button class="btn" id="cunweighted">Unweighted Cumulative GPA</button>
+   
+
+
+  </div>
+	
+<div class = "screen" id = "screen1">
+  <h1>RRISD GPA Calculator</h1>
+  <img src="rrisdpfp.jpg" class="header-image">
+  <p>Round Rock ISD GPA is calculated on a semester rather than a year basis.<br><br></p>
+
+  How to calculate semester grades: Combine both of the marking period grades and divide them by 2. Ex: MP1: 94, MP2: 96. (94+ 96) / 2  = 95 semester average for that class.<br><br>
+  If the grade ends with a .5, round up to the next whole number. <br> Ex: MP1: 93 MP2: 96. (93 + 96) / 2 = 94.5, which rounds up to a 95 for the semester average grade for that class.<br><br>
+  A weighted class at RRISD is usually a core or language class, however, check your school's course list to see what classes qualify as "weighted".<br><br>
+<h1>Instructions</h1>
+  <p>Choose one of the options above for the type of GPA you want to calculate.<br><br>
+  The non-cumulative GPA options are for calculating your GPA with the grades you have currently or for the current semester.<br><br>
+  The cumulative GPA requires you to enter your cumulative GPA from your transcript to display your GPA with the current grades you have.<br><br>
+  <p>To learn how to calculate your GPA, click here: <a href="https://roundrockisd.org/gpa-ric/" target="_blank">Computing Grade Point Average(Official)</a><br><br></p>
+ 
+</div>
+</div>
+<div class = "screen" id = "screen2" style = "display: none;">
+  <h1>Weighted Cumulative GPA Calculator</h1>
+   
+  <br>Warning: Once you click the "Calculate GPA" button, you will not be able to change the grades you inputted and will have to click the "Reset Calculator" button to try again.<br><br>
+  If you do face a persistent error, either click the "Reset Calculator" button or refresh the page.<br><br><br>
+
+     
+	<label for="numClasses">Number of Semesters:</label>
+	<input type="number" id="sems">
+	<button class = "calculator-btn" id="createSems">Create Semesters</button>
+
+  <div id = "semInputs"></div>
+	<div id="classInputs"></div>
+
+
+
+	<button class = "calculator-btn" id="getGPA">Calculate GPA</button>
+	<button class = "calculator-btn" id="reset">Reset Calculator</button>
+
+	<div id="result"></div>
+   <script src = "script.js"></script>
+</div>
+
+<div class = "screen" id = "screen3" style = "display: none;">
+<h1>Weighted Non-Cumulative GPA Calculator</h1>
+
+<br>Warning: Once you click the "Calculate GPA" button, you will not be able to change the grades you inputted and will have to click the "Reset Calculator" button to try again.<br><br>
+If you do face a persistent error, either click the "Reset Calculator" button or refresh the page.<br><br><br>
+
+  <label for="numClasses2">Number of Classes:</label>
+  <input type="number" id="numClasses2">
+  <button class = "calculator-btn" id="createInputs2">Create Inputs</button>
+
+  <div id="classInputs2"></div>
+  <button class = "calculator-btn" id="getGPA2">Calculate GPA</button>
+  <button class = "calculator-btn" id="reset2">Reset Calculator</button>
+
+  <div id="result2"></div>
+  <script src ="script2.js"></script>
+</div>
+
+<div class = "screen" id = "screen4" style = "display: none;">
+<h1>Unweighted Non-Cumulative GPA Calculator</h1>
+<br>Warning: Once you click the "Calculate GPA" button, you will not be able to change the grades you inputted and will have to click the "Reset Calculator" button to try again.<br><br>
+If you do face a persistent error, either click the "Reset Calculator" button or refresh the page.<br><br><br>
+
+  <label for="numClasses3">Number of Classes:</label>
+  <input type="number" id="numClasses3">
+  <button class = "calculator-btn" id="createInputs3">Create Inputs</button>
+
+  <div id="classInputs3"></div>
+  <button class = "calculator-btn" id="getGPA3">Calculate GPA</button>
+  <button class = "calculator-btn" id="reset3">Reset Calculator</button>
+
+  <div id="result3"></div>
+
+  <script src = "script3.js"></script>
+</div>
+
+<div class = "screen" id = "screen5" style = "display: none;">
+<h1>Unweighted Cumulative GPA Calculator</h1>
+<br>Warning: Once you click the "Calculate GPA" button, you will not be able to change the grades you inputted and will have to click the "Reset Calculator" button to try again.<br><br>
+If you do face a persistent error, either click the "Reset Calculator" button or refresh the page.<br><br><br>
+
+<label for="numClasses4">Number of Semesters:</label>
+<input type="number" id="sems4">
+<button class = "calculator-btn" id="createSems4">Create Inputs</button>
+
+<div id = "semInputs4"></div>
+<div id="classInputs4"></div>
+
+
+
+<button class = "calculator-btn" id="getGPA4">Calculate GPA</button>
+<button class = "calculator-btn" id = "reset4">Reset Calculator</button>
+
+<div id="result4"></div>
+<script src = "script4.js"></script>
+</div>
+
+
+
+
+
+
+
+<div class = "footer"></div>
+
+
+<!DOCTYPE html>
+<html>
